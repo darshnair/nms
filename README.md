@@ -69,7 +69,6 @@ purchase at the end, experience a seamless payment process, receive a booking su
 3. Create a SQL file with the Schema about the database tables with necessary relationship.
 
 ### Phase 3: Back End Development Develop a RESTful Web API to perform CRUD operations on Domain objects as per requirements using Spring Boot and MySQL database:
-
 Steps to develop a Restful Web API:
 1. Create a Spring Boot application for each services using Spring boot starters.
 2. Create Entity class for each domain object with required attributes.
@@ -81,7 +80,6 @@ Steps to develop a Restful Web API:
 8. Identify the required MySQL database configuration. Apply the same step for creating all the required services.
 
 ### Phase 4: Adding the Containerization Capability Build a custom image for each service using a Dockerfile:
-
 1. Create a “Dockerfile” in each service application
 2. Add a maven plugin in the pom.xml for building and pushing docker images. 
 3. Open the command, build the docker container image.
