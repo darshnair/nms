@@ -1,12 +1,12 @@
 # NMS Cinemas
 ## Group 6 - Project Case Study - NMS Cinemas - Java Microservices
 
-## Project Timelines...
+## Project Timelines:
 * Team Project  - 4-Aug-22  to 10-Aug-22
 * Evaluation    - 10-Aug-22
 ---
 
-## Project Collaborators...
+## Project Collaborators:
 * Mupparaju Ashok Kumar
 * Sarvesh Ojha
 * Manjunath S B
@@ -68,7 +68,7 @@ purchase at the end, experience a seamless payment process, receive a booking su
   c. Columns of the tables that related to each other.
 3. Create a SQL file with the Schema about the database tables with necessary relationship.
 
-### Phase 3: Back End DevelopmentDevelop a RESTful Web API to perform CRUD operations on Domain objects as per requirementsusing Spring Boot and MySQL database:
+### Phase 3: Back End Development Develop a RESTful Web API to perform CRUD operations on Domain objects as per requirements using Spring Boot and MySQL database:
 
 Steps to develop a Restful Web API:
 1. Create a Spring Boot application for each services using Spring boot starters.
@@ -80,7 +80,7 @@ Steps to develop a Restful Web API:
 7. Create aRestController class for the services.
 8. Identify the required MySQL database configuration. Apply the same step for creating all the required services.
 
-### Phase 4: Adding the Containerization Capability Build a custom image for each serviceusing a Dockerfile:
+### Phase 4: Adding the Containerization Capability Build a custom image for each service using a Dockerfile:
 
 1. Create a “Dockerfile” in each service application
 2. Add a maven plugin in the pom.xml for building and pushing docker images. 
@@ -88,7 +88,7 @@ Steps to develop a Restful Web API:
 4. Login to Docker Hub. 
 5. Finally, Tag and Push the microservice docker image to Docker Hub.
 
-### Phase 5: Adding Microservice Capability 
+### Phase 5: Adding Microservice Capability: 
 1. Use the AWS Parameter Store i.e., Centralized Configuration Management for your parameterslike credentialsor URL of load balancer during the service-to-service calls.
 2. Identify the environment variables to be specified in Task Definition forthe specific service.
 3. Create the parameters in the AWS Parameter Store for all the Services.
