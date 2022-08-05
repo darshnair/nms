@@ -70,13 +70,13 @@ purchase at the end, experience a seamless payment process, receive a booking su
 
 ### Phase 3: Back End Development Develop a RESTful Web API to perform CRUD operations on Domain objects as per requirements using Spring Boot and MySQL database:
 Steps to develop a Restful Web API:
-1. Create a Spring Boot application for each services using Spring boot starters.
+1. Create a Spring Boot application for each service using Spring boot starters.
 2. Create Entity class for each domain object with required attributes.
 3. Create Repository interface for CRUD operations using Spring Data JPA.
 4. Create a Service class for writing the business logic, service-to-service calls and accessing the persistent layer.
 5. Note:Use the Rest Template during the service-to-service calls with AWS.
 6. Implement the Circuit Breaker design pattern using hystrix wherever synchronous service to service communication is required in service layer.
-7. Create aRestController class for the services.
+7. Create a RestController class for the services.
 8. Identify the required MySQL database configuration. Apply the same step for creating all the required services.
 
 ### Phase 4: Adding the Containerization Capability Build a custom image for each service using a Dockerfile:
@@ -87,8 +87,9 @@ Steps to develop a Restful Web API:
 5. Finally, Tag and Push the microservice docker image to Docker Hub.
 
 ### Phase 5: Adding Microservice Capability: 
-1. Use the AWS Parameter Store i.e., Centralized Configuration Management for your parameterslike credentialsor URL of load balancer during the service-to-service calls.
-2. Identify the environment variables to be specified in Task Definition forthe specific service.
+1. Use the AWS Parameter Store i.e., Centralized Configuration Management for your parameters like credentials 
+or URL of load balancer during the service-to-service calls.
+2. Identify the environment variables to be specified in Task Definition for the specific service.
 3. Create the parameters in the AWS Parameter Store for all the Services.
 4. Mention all the parameters (with Name and Value) in Tabular format in the above created word document for each service.
 5. Create a Task Definitions for each service in AWS ECS services with the Launch Type: Fargate.
@@ -99,7 +100,7 @@ Steps to develop a Restful Web API:
 10. Create all the services using AWS ECS Service in the same cluster.
 11. Use the single application load balancer forall the services.
 12. Apply auto-scaling feature to each service.
-13. Test all your service using the functional testing tools like Postman or curl. Add the screenshots in the above word documents. 
+13. Test all your service using the functional testing tools like Postman or curl. Add the screenshots in the above ms-word documents. 
 
 ### Note:
 * Use proper Java Naming Conventions(package, class and interface, variable names).
