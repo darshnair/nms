@@ -1,7 +1,6 @@
 # NMS Cinemas
 ## Group 6 - Project Case Study - NMS Cinemas - Java Microservices
 
----
 ## Project Timelines...
 * Team Project  - 4-Aug-22  to 10-Aug-22
 * Evaluation    - 10-Aug-22
