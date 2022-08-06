@@ -10,12 +10,12 @@
 ---
 
 ## Project Collaborators:
-* Mupparaju Ashok Kumar
+* Ashok Kumar
 * Sarvesh Ojha
 * Manjunath S B
 * Darsh Nair
 * Raghav Agarwal
-* KethamReddy Lokeshwar Reddy
+* Ketham Reddy
 ---
 
 ## Project Tech Stack:
