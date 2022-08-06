@@ -58,7 +58,7 @@ purchase at the end, experience a seamless payment process, receive a booking su
 
 ## Angular Single Page Application (UI):
 - Dashboard:
-![](https://github.com/darshnair/nms/src/main/resources/static/dashboard.png)
+![](https://user-images.githubusercontent.com/56908355/183258551-6e6b8a63-ef5a-45d0-b48c-5a0d290422da.png)
 
 - Manage Movies:
 ![](https://github.com/darshnair/nms/src/main/resources/static/manage-movies.png)
