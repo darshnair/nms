@@ -61,11 +61,10 @@ purchase at the end, experience a seamless payment process, receive a booking su
 ![](https://user-images.githubusercontent.com/56908355/183258551-6e6b8a63-ef5a-45d0-b48c-5a0d290422da.png)
 
 - Manage Movies:
-![](https://github.com/darshnair/nms/src/main/resources/static/manage-movies.png)
+![]([https://github.com/darshnair/nms/src/main/resources/static/manage-movies.png](https://user-images.githubusercontent.com/56908355/183258612-6519c278-4890-44ea-ad49-336384de2cfb.png))
 
 - View Movies:
-![](https://github.com/darshnair/nms/src/main/resources/static/view-movies.png)
-
+![]([https://github.com/darshnair/nms/src/main/resources/static/view-movies.png](https://user-images.githubusercontent.com/56908355/183258619-65b749fb-54d7-41e9-ab02-4ef04e0c7bc9.png))
 
 ### Phase 1: Identify the services:
 1. Review the Angular Single Page Application UI and Business Requirements mention above.
