@@ -3,10 +3,10 @@
 
 ## Project Timelines:
 
-| Activity | Start Date | End Date |
-|----------|------------|----------|
-| `Team Project` | 4-Aug-22 | `10-Aug-22` |
-| `Evaluation` | 10-Aug-22 | `10-Aug-22` |
+| Activity               | Start Date | End Date |
+|------------------------|------------|----------|
+| `Design & Development` | 4-Aug-22 | `10-Aug-22` |
+| `Evaluation`           | 10-Aug-22 | `10-Aug-22` |
 ---
 
 ## Project Collaborators:
