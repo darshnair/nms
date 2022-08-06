@@ -2,8 +2,11 @@
 ## Group 6 - Project Case Study - NMS Cinemas - Java Microservices
 
 ## Project Timelines:
-* Team Project  - 4-Aug-22  to 10-Aug-22
-* Evaluation    - 10-Aug-22
+
+| Activity       | Start Date | End Date    |
+|----------------|----------|-------------|
+| `Team Project` | 4-Aug-22 | `10-Aug-22` |
+| `Evaluation`   | 10-Aug-22 | `10-Aug-22` |
 ---
 
 ## Project Collaborators:
@@ -54,6 +57,15 @@ apply filters and sort results based on different genres, add all the selected m
 purchase at the end, experience a seamless payment process, receive a booking summary page once the payment is complete.
 
 ## Angular Single Page Application (UI):
+- Dashboard:
+![](https://github.com/darshnair/nms/src/main/resources/static/dashboard.png)
+
+- Manage Movies:
+![](https://github.com/darshnair/nms/src/main/resources/static/manage-movies.png)
+
+- View Movies:
+![](https://github.com/darshnair/nms/src/main/resources/static/view-movies.png)
+
 
 ### Phase 1: Identify the services:
 1. Review the Angular Single Page Application UI and Business Requirements mention above.
@@ -63,9 +75,9 @@ purchase at the end, experience a seamless payment process, receive a booking su
 ### Phase 2: Database Schema Design:
 1. Identify domain objects and their attributes as per the requirement.
 2. Create a Data Dictionary in the above ms-word document with below information:
-  a. Name of the tables in the database.
-  b. Constraints of a table i.e., keys, relationships, etc.
-  c. Columns of the tables that related to each other.
+   - Name of the tables in the database.
+   - Constraints of a table i.e. keys, relationships, etc.
+   - Columns of the tables that related to each other.
 3. Create a SQL file with the Schema about the database tables with necessary relationship.
 
 ### Phase 3: Back End Development Develop a RESTful Web API to perform CRUD operations on Domain objects as per requirements using Spring Boot and MySQL database:
