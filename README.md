@@ -1,15 +1,14 @@
 # NMS Cinemas
 ## Group 6 - Project Case Study - NMS Cinemas - Java Microservices
 
-## Project Timelines:
-
+### Project Timelines:
 | Activity               | Start Date | End Date |
 |------------------------|------------|----------|
 | `Design & Development` | 4-Aug-22 | `10-Aug-22` |
 | `Evaluation`           | 10-Aug-22 | `10-Aug-22` |
 ---
 
-## Project Collaborators:
+### Project Collaborators:
 * Ashok Kumar
 * Sarvesh Ojha
 * Manjunath S B
@@ -18,7 +17,7 @@
 * Ketham Reddy
 ---
 
-## Project Tech Stack:
+### Project Tech Stack:
 * Server-side:    Spring Boot, Spring Cloud, Spring Data JPA
 * Database:       MySQL
 * Server:         Embedded Tomcat
@@ -26,7 +25,7 @@
 * Cloud Service:  AWS ECS
 ---
 
-## Project Instructions:
+### Project Instructions:
 * Group will be formed by SME’s.
 * Participants should choose the project leader.
 * Project Lead should assign the roles and responsibilities of project and update to team members.
@@ -34,29 +33,29 @@
 * Project Lead should keep track of each team member's day-to-day activities in the Group activity template.
 ---
 
-## Project Type: Online Movie Ticket Booking
+### Project Type: Online Movie Ticket Booking
 
-## Project Domain: Entertainment
+### Project Domain: Entertainment
 
-## Project Objective: 
+### Project Objective: 
 Develop  a Backend  Restful  Web  services for  booking  movie  tickets  online  for  different  genres and 
 languages based on the UI designed by front-end team using Java Microservice architecture.
 
-## Background of the project: 
+### Background of the project: 
 NMS Cinemas is a chain of single screen theatres that screen movie shows of different genres and languages at very genuine prices. 
 It was established in 2004 in Pune, India. Recently, the business analysts noticed a decline in sales since 2010. 
 They found out that the online booking of movie tickets from apps, such as BookMyShow and Paytm were gaining more profit 
-by eliminating middlemen from the equation.Front-end team developed theUI in Angular with array as datastore. 
+by eliminating middlemen from the equation. Front-end team developed the UI in Angular with array as datastore. 
 Now Team decided to develop required backend RESTful Web services based on the below UI using Java Microservice and 
-AWS Cloud Architecture.The admin user will be able to Login to portal, create admin account,add,or remove different 
+AWS Cloud Architecture. The admin user will be able to Login to portal, create admin account, add, or remove different 
 genres to or from the application to build a rich product line, edit movie details like name, ticket price, language, 
-description, and show timings to keep it aligned to the current prices, enable,or disable movie shows, delete the movies, 
+description, and show timings to keep it aligned to the current prices, enable, or disable movie shows, delete the movies, 
 view different genres. The end user will be able to register to the application, change password, update profile, sign-in 
 into the application to maintain the record of activities, Search for movie tickets based on the search keyword, 
 apply filters and sort results based on different genres, add all the selected movie tickets to a cart and customize the 
 purchase at the end, experience a seamless payment process, receive a booking summary page once the payment is complete.
 
-## Angular Single Page Application (UI):
+### Angular Single Page Application (UI):
 - Dashboard:
 ![](https://user-images.githubusercontent.com/56908355/183258551-6e6b8a63-ef5a-45d0-b48c-5a0d290422da.png)
 
@@ -66,12 +65,12 @@ purchase at the end, experience a seamless payment process, receive a booking su
 - View Movies:
 ![](https://user-images.githubusercontent.com/56908355/183258619-65b749fb-54d7-41e9-ab02-4ef04e0c7bc9.png)
 
-### Phase 1: Identify the services:
+#### Phase 1: Identify the services:
 1. Review the Angular Single Page Application UI and Business Requirements mention above.
 2. Identify the services and operations required as per the functionality.
 3. Create a ms-word document and enlist all the services in the tabular format.
 
-### Phase 2: Database Schema Design:
+#### Phase 2: Database Schema Design:
 1. Identify domain objects and their attributes as per the requirement.
 2. Create a Data Dictionary in the above ms-word document with below information:
     - Name of the tables in the database.
@@ -79,7 +78,7 @@ purchase at the end, experience a seamless payment process, receive a booking su
     - Columns of the tables that related to each other.
 3. Create a SQL file with the Schema about the database tables with necessary relationship.
 
-### Phase 3: Back End Development Develop a RESTful Web API to perform CRUD operations on Domain objects as per requirements using Spring Boot and MySQL database:
+#### Phase 3: Back End Development Develop a RESTful Web API to perform CRUD operations on Domain objects as per requirements using Spring Boot and MySQL database:
 Steps to develop a Restful Web API:
 1. Create a Spring Boot application for each service using Spring boot starters.
 2. Create Entity class for each domain object with required attributes.
@@ -90,14 +89,14 @@ Steps to develop a Restful Web API:
 7. Create a RestController class for the services.
 8. Identify the required MySQL database configuration. Apply the same step for creating all the required services.
 
-### Phase 4: Adding the Containerization Capability Build a custom image for each service using a Dockerfile:
+#### Phase 4: Adding the Containerization Capability Build a custom image for each service using a Dockerfile:
 1. Create a “Dockerfile” in each service application
 2. Add a maven plugin in the pom.xml for building and pushing docker images. 
 3. Open the command, build the docker container image.
 4. Login to Docker Hub. 
 5. Finally, Tag and Push the microservice docker image to Docker Hub.
 
-### Phase 5: Adding Microservice Capability: 
+#### Phase 5: Adding Microservice Capability: 
 1. Use the AWS Parameter Store i.e., Centralized Configuration Management for your parameters like credentials 
 or URL of load balancer during the service-to-service calls.
 2. Identify the environment variables to be specified in Task Definition for the specific service.
