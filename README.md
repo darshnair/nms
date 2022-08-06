@@ -3,10 +3,10 @@
 
 ## Project Timelines:
 
-| Activity       | Start Date | End Date    |
-|----------------|----------|-------------|
+| Activity | Start Date | End Date |
+|----------|------------|----------|
 | `Team Project` | 4-Aug-22 | `10-Aug-22` |
-| `Evaluation`   | 10-Aug-22 | `10-Aug-22` |
+| `Evaluation` | 10-Aug-22 | `10-Aug-22` |
 ---
 
 ## Project Collaborators:
@@ -65,6 +65,29 @@ purchase at the end, experience a seamless payment process, receive a booking su
 
 - View Movies:
 ![](https://user-images.githubusercontent.com/56908355/183258619-65b749fb-54d7-41e9-ab02-4ef04e0c7bc9.png)
+
+### Phase 1: Identify the services:
+1. Review the Angular Single Page Application UI and Business Requirements mention above.
+2. Identify the services and operations required as per the functionality.
+3. Create a ms-word document and enlist all the services in the tabular format.
+
+### Phase 2: Database Schema Design:
+1. Identify domain objects and their attributes as per the requirement.
+2. Create a Data Dictionary in the above ms-word document with below information:
+    - Name of the tables in the database.
+    - Constraints of a table i.e., keys, relationships, etc.
+    - Columns of the tables that related to each other.
+3. Create a SQL file with the Schema about the database tables with necessary relationship.
+
+### Phase 3: Back End Development Develop a RESTful Web API to perform CRUD operations on Domain objects as per requirements using Spring Boot and MySQL database:
+Steps to develop a Restful Web API:
+1. Create a Spring Boot application for each service using Spring boot starters.
+2. Create Entity class for each domain object with required attributes.
+3. Create Repository interface for CRUD operations using Spring Data JPA.
+4. Create a Service class for writing the business logic, service-to-service calls and accessing the persistent layer.
+5. Note:Use the Rest Template during the service-to-service calls with AWS.
+6. Implement the Circuit Breaker design pattern using hystrix wherever synchronous service to service communication is required in service layer.
+7. Create a RestController class for the services.
 8. Identify the required MySQL database configuration. Apply the same step for creating all the required services.
 
 ### Phase 4: Adding the Containerization Capability Build a custom image for each service using a Dockerfile:
