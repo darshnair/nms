@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.nms</groupId>
     <artifactId>nms</artifactId>
-    <version>2022.08.06</version>
+    <version>2022.08.07</version>
     <name>nms</name>
     <description>nms</description>
     <properties>
