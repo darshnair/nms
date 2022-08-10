@@ -19,7 +19,7 @@ public class MovieGenreController {
 
 	@GetMapping("/movie/{movieId}")
 	public MovieGenre getMovieGenre(@PathVariable("movieId") Long movieId) {
-		return this.movieGenreService.getMovieGenre(movieId);
+		return movieGenreService.getMovieGenre(movieId);
 	}
 	
 }
