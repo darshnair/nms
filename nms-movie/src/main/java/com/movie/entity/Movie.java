@@ -1,48 +1,50 @@
 package com.movie.entity;
 
+import lombok.*;
+
+import javax.persistence.*;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Set;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "MOVIE")
 public class Movie {
 
-	private Long movieId;
-	private String movie_name;
-	private String movie_genre;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "MOVIEID")
+    protected Long movieId;
 
-	public Movie() {
-	}
+    @Column(name = "MOVIENAME")
+    protected String movie_name;
 
-	public Movie(Long movieId, String movie_name, String movie_genre) {
-		this.movieId = movieId;
-		this.movie_name = movie_name;
-		this.movie_genre = movie_genre;
-	}
+    @Column(name = "MOVIEGENRE")
+    private String movie_genre;
 
-	public Movie(Long movieId, String movie_name) {
-		super();
-		this.movieId = movieId;
-		this.movie_name = movie_name;
-	}
+    protected String duration;
 
-	public Long getMovieId() {
-		return movieId;
-	}
+    @Column(name = "DATEOFBOOKING")
+    protected LocalDate dateofbooking;
 
-	public void setMovieId(Long movieId) {
-		this.movieId = movieId;
-	}
+    @Column(name = "`SHOW`")
+    protected String show;
 
-	public String getMovie_name() {
-		return movie_name;
-	}
+    @Column(name = "NUMBEROFTICKETS")
+    protected int nooftickets;
 
-	public void setMovie_name(String movie_name) {
-		this.movie_name = movie_name;
-	}
-
-	public String getMovie_genre() {
-		return movie_genre;
-	}
-
-	public void setMovie_genre(String movie_genre) {
-		this.movie_genre = movie_genre;
-	}
+//    @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL)
+//    @ToString.Exclude
+//    protected Set<Screening> screening;
+//
+//    @ManyToMany(cascade = CascadeType.ALL)
+//    @JoinTable(name = "MOVIE_THEATER",
+//            joinColumns = {@JoinColumn(name = "MOVIEID")},
+//            inverseJoinColumns = {@JoinColumn(name = "THEATERID")
+//    })
+//    protected List<Theater> theaters;
 
 }

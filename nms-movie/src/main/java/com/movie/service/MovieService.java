@@ -4,6 +4,8 @@ import com.movie.entity.Movie;
 
 public interface MovieService {
 
-	public Movie getMovie(Long movie_id);
+	Movie getMovie(Long movie_id);
+
+	void saveMovie(Movie movie);
 	
 }

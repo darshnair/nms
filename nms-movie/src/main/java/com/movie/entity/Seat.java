@@ -1,19 +1,11 @@
-package com.nms.bo;
+package com.movie.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.util.Set;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
 
 @Data
 @AllArgsConstructor
@@ -24,10 +16,10 @@ public class Seat {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "SEAT_ID")
+    @Column(name = "SEATID")
     protected int seatid;
 
-    @Column(name="SEAT_NUMBER")
+    @Column(name="SEATNUMBER")
     protected String seatnumber;
 
     @OneToMany(mappedBy = "seat", cascade = CascadeType.ALL)

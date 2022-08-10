@@ -1,17 +1,10 @@
-package com.nms.bo;
+package com.movie.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Set;
 
 
@@ -24,20 +17,20 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="USER_ID")
+    @Column(name="USERID")
     protected int uid;
 
-    @Column(name="USER_NAME")
+    @Column(name="USERNAME")
     protected String uname;
 
     protected String password;
 
     protected String gender;
 
-    @Column(name="PH_NO")
+    @Column(name="PHNO")
     protected int phno;
 
-    @Column(name="EMAIL_ID")
+    @Column(name="EMAILID")
     protected String emailId;
 
     protected int age;

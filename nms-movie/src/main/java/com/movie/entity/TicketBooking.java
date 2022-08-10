@@ -1,20 +1,12 @@
-package com.nms.bo;
+package com.movie.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.time.LocalTime;
 import java.util.Date;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 
 @Data
 @NoArgsConstructor
@@ -25,36 +17,36 @@ public class TicketBooking {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="BOOKING_ID")
+    @Column(name="BOOKINGID")
     protected int bookId;
 
-    @Column(name="USER_NAME")
+    @Column(name="USERNAME")
     protected String uname;
 
-    @Column(name = "TICKET_NM")
+    @Column(name = "TICKETNAME")
     protected String tname;
 
-    @Column(name="SHOW_DATE")
+    @Column(name="SHOWDATE")
     protected Date showdate;
 
-    @Column(name="SHOW_TIME")
+    @Column(name="SHOWTIME")
     protected LocalTime showtime;
 
-    @Column(name="NUMBER_OF_TICKETS")
+    @Column(name="NUMBEROFTICKETS")
     protected int nooftickets;
 
     protected float price;
 
     @ManyToOne
-    @JoinColumn(name="USER_ID", nullable = false)
+    @JoinColumn(name="USERID", nullable = false)
     protected User user;
 
     @ManyToOne
-    @JoinColumn(name="SCREEN_ID", nullable = false)
+    @JoinColumn(name="SCREENID", nullable = false)
     protected Screening screening;
 
     @ManyToOne
-    @JoinColumn(name="SEAT_ID", nullable = false)
+    @JoinColumn(name="SEATID", nullable = false)
     protected Seat seat;
 
 }
