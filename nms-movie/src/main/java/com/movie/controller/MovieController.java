@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import com.movie.entity.Movie;
-import com.movie.entity.MovieGenre;
+import com.movie.dto.MovieGenre;
 import com.movie.service.MovieService;
 
 @RestController
@@ -24,11 +24,13 @@ public class MovieController {
     @GetMapping("/{movieId}")
     public Movie getMovie(@PathVariable("movieId") Long movieId) {
 
-		Movie movie = this.movieService.getMovie(movieId); // http://localhost:9001/nms-genre/movie/12345
-        MovieGenre genre = this.restTemplate.getForObject("http://nms-genre/genre/movie/" + movie.getMovieId(), MovieGenre.class, movie.getMovieId());
-        movie.setMovie_genre(genre.getGenreName());
+        //http://localhost:9001/nms-genre/movie/1234
 
-        return movie;
+		Movie movieRes = this.movieService.getMovie(movieId);
+        MovieGenre genre = this.restTemplate.getForObject("http://nms-genre/genre/movie/" + movieRes.getMovieId(), MovieGenre.class, movieRes.getMovieId());
+        movieRes.setMovie_genre(genre!=null?genre.getGenreName():"");
+
+        return movieRes;
     }
 
 }

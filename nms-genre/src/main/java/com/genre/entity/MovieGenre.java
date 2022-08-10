@@ -1,36 +1,29 @@
 package com.genre.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "MOVIE_GENRE")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class MovieGenre {
 
+	@Id
+	@Column(name = "GENRE_ID", nullable = false)
 	private Long genreId;
+
+	@Column(name = "GENRE_NAME")
 	private String genreName;
+
+	@Column(name = "MOVIE_ID")
 	private Long movieId;
-	public MovieGenre() {
-		
-	}
-	public MovieGenre(Long genreId, String genreName, Long movieId) {
-		this.genreId = genreId;
-		this.genreName = genreName;
-		this.movieId = movieId;
-	}
-	public Long getGenreId() {
-		return genreId;
-	}
-	public void setGenreId(Long genreId) {
-		this.genreId = genreId;
-	}
-	public String getGenreName() {
-		return genreName;
-	}
-	public void setGenreName(String genreName) {
-		this.genreName = genreName;
-	}
-	public Long getMovieId() {
-		return movieId;
-	}
-	public void setMovieId(Long movieId) {
-		this.movieId = movieId;
-	}
-	
 	
 }

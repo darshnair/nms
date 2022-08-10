@@ -1,7 +1,7 @@
 package com.movie.service;
 
-import java.util.List;
-
+import com.movie.repository.MovieRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.movie.entity.Movie;
@@ -9,20 +9,16 @@ import com.movie.entity.Movie;
 @Service
 public class MovieServiceImpl implements MovieService {
 
-	
-	// fake movie list
-	
-	List<Movie> list = List.of(
-			new Movie(12345L, "ABCD"),
-			new Movie(12346L, "Sherlock"),
-			new Movie(123452L, "AT 56")
-			);
-	
-	
+	@Autowired
+	private MovieRepository movieRepository;
+
 	@Override
 	public Movie getMovie(Long movie_id) {
-		
-		return this.list.stream().filter(movie -> movie.getMovieId().equals(movie_id)).findAny().orElse(null);
+		return movieRepository.findById(movie_id).orElse(null);
+	}
+
+	public void saveMovie(Movie movie) {
+		movieRepository.save(movie);
 	}
 
 }
