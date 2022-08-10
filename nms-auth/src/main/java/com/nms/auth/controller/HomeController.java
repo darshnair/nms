@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 @RequestMapping("/login")
-public class Home {
+public class HomeController {
 
 	@Autowired
 	private RestTemplate restTemplate;
