@@ -1,4 +1,4 @@
-package com.nms.core.auth.config;
+package com.nms.auth.config;
 
 import java.io.IOException;
 
@@ -7,8 +7,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.nms.core.auth.helper.JwtUtil;
-import com.nms.core.auth.service.CustomUserDetailsService;
+import com.nms.auth.helper.JwtUtil;
+import com.nms.auth.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

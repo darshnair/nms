@@ -1,4 +1,4 @@
-package com.nms.core.auth.helper;
+package com.nms.auth.helper;
 
 import java.util.Date;
 import java.util.HashMap;
