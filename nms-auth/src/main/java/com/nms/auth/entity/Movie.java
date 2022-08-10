@@ -1,4 +1,4 @@
-package com.nms.core.auth.entity;
+package com.nms.auth.entity;
 
 public class Movie {
 

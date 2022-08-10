@@ -1,4 +1,4 @@
-package com.nms.core.auth.model;
+package com.nms.auth.model;
 
 public class JwtUserResponse {
 

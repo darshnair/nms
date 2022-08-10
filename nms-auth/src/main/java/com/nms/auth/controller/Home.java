@@ -1,6 +1,6 @@
-package com.nms.core.auth.controller;
+package com.nms.auth.controller;
 
-import com.nms.core.auth.entity.Movie;
+import com.nms.auth.entity.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
