@@ -1,6 +1,6 @@
-package com.nms.core.auth.config;
+package com.nms.auth.config;
 
-import com.nms.core.auth.service.CustomUserDetailsService;
+import com.nms.auth.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.nms.core.auth.service;
+package com.nms.auth.service;
 
 import java.util.ArrayList;
 

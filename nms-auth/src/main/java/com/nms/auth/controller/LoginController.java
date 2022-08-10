@@ -1,7 +1,7 @@
-package com.nms.core.auth.controller;
+package com.nms.auth.controller;
 
-import com.nms.core.auth.helper.JwtUtil;
-import com.nms.core.auth.service.CustomUserDetailsService;
+import com.nms.auth.helper.JwtUtil;
+import com.nms.auth.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nms.core.auth.model.JwtUserRequest;
-import com.nms.core.auth.model.JwtUserResponse;
+import com.nms.auth.model.JwtUserRequest;
+import com.nms.auth.model.JwtUserResponse;
 
 @RestController
 public class LoginController{
