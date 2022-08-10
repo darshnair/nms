@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nms.auth.model.JwtUserRequest;
-import com.nms.auth.model.JwtUserResponse;
+import com.nms.auth.dto.JwtUserRequest;
+import com.nms.auth.dto.JwtUserResponse;
 
 @RestController
 public class LoginController{
