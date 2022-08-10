@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.nms.core</groupId>
     <artifactId>nms-core</artifactId>
-    <version>2022.08.09-SNAPSHOT</version>
+    <version>2022.08.10</version>
     <name>nms-core</name>
     <description>nms</description>
     <properties>
