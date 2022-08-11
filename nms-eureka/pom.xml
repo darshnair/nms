@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.nms.eureka</groupId>
     <artifactId>nms-eureka</artifactId>
-    <version>2022.08.10</version>
+    <version>2022.08.11</version>
     <name>nms-eureka</name>
     <description>This is microservice is for eureka service registry</description>
     <properties>
