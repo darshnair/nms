@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.nms.genre</groupId>
     <artifactId>nms-genre</artifactId>
-    <version>2022.08.10</version>
+    <version>2022.08.11</version>
     <name>nms-genre</name>
     <description>This is genre service</description>
     <properties>
