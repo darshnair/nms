@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.nms.gateway</groupId>
     <artifactId>nms-gateway</artifactId>
-    <version>2022.08.10</version>
+    <version>2022.08.11</version>
     <name>nms-gateway</name>
     <description>This microservice is for api gateway</description>
     <properties>
