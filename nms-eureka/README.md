@@ -1,6 +1,6 @@
 # NMS Cinemas
 
-## NMS-CORE
+## NMS-EUREKA
 
 ### Project Tech Stack:
 * Server-side:    Spring Boot, Spring Cloud, Spring Data JPA
